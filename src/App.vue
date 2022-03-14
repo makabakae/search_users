@@ -1,28 +1,20 @@
+
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div class="container">
+		<searchGit/>
+		<ListUsers/>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+	import searchGit from './components/searchGit'
+	import ListUsers from './components/ListUsers'
+	export default {
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+		name:'App',
+		components:{searchGit,ListUsers},
+
+	}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
